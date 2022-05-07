@@ -1,0 +1,48 @@
+.Navstart{
+    width: 100%;
+    height: 75px;
+    /* border: 1px solid crimson; */
+    display: flex;
+    background-color: #0a438b;
+color: whitesmoke;
+font-weight: 500;
+font-stretch: expanded;
+font-size: 16px;
+   }
+   a{
+       color: white;
+   }
+   .Navstart>div{
+height: 100%;
+width: 50%;
+/* border: 1px solid black; */
+   }
+   #Navimg{
+       width: 65%;
+   }
+   #Navimg>div{
+       height: 100%;
+       width: 15%;
+       /* border: 1px solid black; */
+        margin-left: 20%;
+        background-color: #0a438b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+   #Navsignin{
+       width: 40%;
+       display: grid;
+       grid-template-columns: repeat(5,1fr);
+gap: 20px;
+   }
+   #Navsignin>div{
+       /* border: 1px solid black; */
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+ 
+   a{
+       text-decoration:none;
+   }

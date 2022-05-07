@@ -1,0 +1,274 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container{
+        height: auto;
+        width: 100%;
+        /* border: 1px solid black; */
+    }
+    #logo{
+        height: 40px;
+        width:97%
+        ;
+        /* border-bottom: 1px solid black; */
+
+        margin: auto;
+    }
+    #logo>img{
+        height: 80%;
+        width: 100%;
+    }
+    #page{
+        height: 700px;
+        width: 400px;
+        /* border: 1px solid black; */
+        margin: auto;
+    }
+    #page>h1{
+        /* border: 1px solid black; */
+    }
+    #page>form>input{
+        width: 100%;
+        height: 60px;
+        /* border: 1px solid black; */
+        border-radius: 7px;
+        margin-top: 17px;
+    }
+    input::-webkit-input-placeholder {
+    font-size: 16px;
+    color: #505c66;
+}
+ 
+#checkbox{
+    color: #505c66;
+    margin-top: 20px;
+    position: relative;
+    
+}
+#checkbox>text{
+    margin-bottom: 5px;
+}
+#Check{
+    height: 20px;
+    width: 20px;
+    border: 2px solid gray;
+    position: absolute;
+
+}
+#checkbox>input{
+    /* margin-bottom: 40px; */
+    border: 2px solid gray;
+    cursor: pointer;
+}
+#account{
+   bottom: 0px;
+    /* border: 1px solid black; */
+    color: #505c66;
+ top:-30px;
+}
+#account>p{
+    margin-top: -15px;
+    font-size: 14px;
+    color: #505c66;
+    margin-left: 5px;
+}
+ #keepmesingedin>p{
+     margin-left: 30px;
+     font-size: 14px;
+     padding-top: 5px;
+     color: #505c66;
+ }
+ #checkText{
+font-size: 14px;
+letter-spacing: .5px;
+ }
+ #Check:focus{
+     /* border: 2px solid royalblue; */
+ }
+ .enterDetails{
+     display: none;
+     color: red;
+ }
+ #divButton{
+     height: 30px;
+     width: 100%;
+     border-radius: 5px;
+     background-color:lightsteelblue;
+    text-align: center;
+   
+    color: white;
+    font-size: 18px;
+/* border: 1px solid black; */
+margin-top: 25px;
+cursor: pointer;
+ }
+ #divButton>button{
+     background-color: lightskyblue;
+     cursor: pointer;
+ }
+ #Already{
+     margin-top: 20px;
+     text-align: center;
+ }
+ #facebookImg{
+     display: flex;
+     /* border: 1px solid black; */
+justify-content: center;
+    }
+ #facebookImg>div{
+     /* border: 1px solid black; */
+     height: 35px;
+     width:35px;
+     text-align: center;
+ }
+ #facebookImg>div>img{
+     height: 50%;
+     width: 50%;
+     margin-top: 10px;
+    
+ }
+ 
+form{
+    /* border: 1px solid black; */
+}
+form>div{
+    
+}
+#divButton>button{
+    width: 100%;
+    height: 55px;
+    background-color: rgb(83, 78, 224);
+    color: white;
+}
+button:hover{
+    opacity: 0.9;
+}
+a{
+    text-decoration: none;
+    color: skyblue;
+}
+a:hover{
+    color: red;
+    text-decoration: solid;
+}
+button:hover{
+    font-size: 50px;
+    
+}
+facebook>div:hover{
+    height: 150%;
+    width: 150%;
+}
+</style>
+<body>
+    <div id="container">
+        <!-- <div>sdfsd</div> -->
+ <center><img src="https://www.travelocity.com/_dms/interstitial/logo.svg?locale=en_US&siteid=80001" alt=""></center>
+        <div id="page">
+<h1>Create free account</h1>
+<!-- form details -->
+
+<form action="" id="form" onsubmit="done()" >
+<input id="email" type="text" placeholder=" Email address">
+ 
+<br>
+<input id="firstName" type="text" placeholder="  First name">
+ 
+<br>
+<input id="lastName"  type="text" placeholder="  Last name">
+ 
+
+<br>
+<input id="password"  type="password"  class="inputText"  placeholder="  password">
+ 
+<div >
+ 
+  
+</div>
+<div  id="checkbox" >
+     <input onclick="checkedbox()"   type="checkbox" name="" id="Check" > 
+    
+  <div id="keepmesingedin">
+    <p>
+        Keep me signed in       
+    </p>  
+
+ </div>
+ <p id="checkText" style="display: none;">
+    Selecting this checkbox will keep you signed into your account on this device until you sign out. Do not select this on shared devices.
+</p>
+     <br>
+  <div id="account" >
+      <p>
+        By creating an account, I agree to the Travelocity Terms and Conditions and Privacy Statement.
+      </p>
+  </div>
+   
+ </div>
+ <div id="divButton"
+ ><button style=" background-color: #0d5ab9;border-radius: 5px;" onclick="done()">continue</button>
+</form>
+ <div id="Already"
+style="color: black;"  >Already have an account?<a href="loginpage.html">Sign in</a>
+<p>or continue with</p>
+</div>
+<div id="facebookImg">
+    <div><img src="https://a.travel-assets.com/egds/marks/apple.svg" alt=""></div>
+<div> <img src="https://a.travel-assets.com/egds/marks/facebook.svg" alt=""></div>
+</div>
+ 
+
+</div>
+
+
+    </div>
+</body>
+</html>
+
+<script>
+    
+    function checkedbox(){
+      let text=document.getElementById("checkText");
+        if(document.getElementById("Check").checked==true){
+         text.style.display="block";
+        //  document.getElementById("Check").style.background="royalblue"
+        }
+        else{
+            text.style.display="none";
+        }
+    }
+let arr=JSON.parse(localStorage.getItem("details"))||[];
+// console.log("lelele")
+console.log(arr);
+ function done(){
+     event.preventDefault();
+
+let form=document.getElementById("form");
+let firstName=form.firstName.value;
+let lastName=form.lastName.value;
+let email=form.email.value;
+let password=form.password.value;
+console.log(password)
+
+ let obj={
+     firstName:firstName,
+     lastName:lastName,
+     email:email,
+     password:password
+ }
+    arr.push(obj);
+    localStorage.setItem("details",JSON.stringify(arr));
+      window.location.href="loginpage.html"
+ }
+
+   let fb=document.getElementById("facebookImg").addEventListener("click",function(ele){
+
+    window.location.href="loginpage.html"
+   })
+
+</script>

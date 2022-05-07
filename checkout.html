@@ -1,0 +1,412 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+
+</head>
+<style>
+#check{width: 97%;
+    margin: auto;
+border: 1px solid black;
+display: flex;
+justify-content: space-around;
+gap: 10px;
+}
+#check>div{
+    width: 22%;
+}
+#check>div>input{
+    width: 100%;
+    height: 45px;
+    border: 1px solid black;
+    font-size: 18px;
+}
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(97, 10, 10, 0.561) 0px 10px 10px;
+  width: 45%;
+  height: 500px;
+  bottom: -25px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+  ;
+  padding-left: 20px;
+
+} 
+
+button{
+    border-radius: 50%;
+    height: 26px;
+    color: #505c66;
+    /* border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133);
+     */
+ /* border: none; */
+ background-color: whitesmoke;
+ cursor: pointer;
+    }
+    #abc:hover{
+border: 1px solid blue;
+    }
+#myBtn::placeholder:focus{
+  text:none;
+}
+#checkAvailable{
+    cursor: pointer;
+    
+}
+#checkAvailable::placeholder{
+    color: white;
+    
+}
+input{
+    border-radius: 10px;
+    cursor: pointer;
+}
+input:focus{
+    border: 10px solid blue;
+}
+*alert{
+    background-color: orangered;
+color: black;
+}
+ 
+/* AIzaSyBUik1ilANgfPaK6FNrNax44qNHhEskORg */
+.getData{
+    width: 97%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+
+}
+.getData>div{
+    border: 1px solid black;
+    width: 50%;
+    text-align: center;
+}
+#detailsDiv{
+    border: 1px solid black;
+}
+.getData>div>img{
+    width: 100%;
+    height: 60%;
+}
+
+.extraInformation{
+    width: 97%;
+    /* border: 1px solid red; */
+    margin: auto;
+    display: flex;
+    /* justify-content: center; */
+    gap: 25px;
+    margin-top: 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    
+}
+.extraInformation>div{
+    /* border: 1px solid  black; */
+    border-radius: 2px;
+    color: #505c66;
+    text-decoration: none;
+   margin-left: 20px;
+   font-weight: bold;
+   /* background: transparent; */
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border-bottom: 2px solid #505c66;
+  text-shadow: rgb(38, 57, 77);
+
+text-align: center;
+}
+
+.extraInformation>div:hover{
+background-color: cornflowerblue;
+/* border-radius: 50%;
+height: 120%; */
+}
+a{
+    text-decoration: none;
+    /* color: #505c66; */
+    /* transition: 0.1s ease-out; */
+    transition: width .5s ease, background-color .5s ease;
+}
+ 
+a:hover{
+    /* border-bottom: 2px solid blue; */
+}
+ button:hover{
+     opacity: 0.7;
+     background-color: rgb(40, 96, 198);
+ }
+#car {
+display: none;
+ }
+</style>
+
+<body>
+<div id="navbar"></div>
+ <div class="getData">
+    
+
+    
+<div id="imgDiv" >
+    <div id="div"></div>
+    <!-- <input type="radio"> -->
+    <br>
+    <input onclick="carPlay()" type="checkbox" name="" id="check">
+  <label for="">Do you want to add car</label>
+    <div id="car"><iframe width="60%" height="200px" src="https://www.youtube.com/embed/PkkV1vLHUvQ" autoplay=1 &mute=1 title="YouTube video player" autoplay="1" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+<div id="detailsDiv"></div>
+    
+     </div>
+
+     <!-- <div class="extraInformation" >
+       <div> <a href="#">Overview</a> </div>
+       <div> <a href="#">Rooms</a> </div>
+       <div> <a href="#">Location</a> </div>
+       <div> <a href="#">Amenities</a> </div>
+       <div> <a href="#">Polices</a> </div>
+       <div> <a href="#">Reviews</a> </div>
+      
+             </div>   -->
+    <div class="container">
+        <div style="margin-left: 17px; font-weight: bold; margin-top: 75px;" > <h1>Chekck room available or not</h1> </div>
+       
+        <div id="check">
+            <div ><input type="datetime-local"></div>
+            <div><input type="datetime-local"></div>
+            <div style="width: 450px;" ><input id="myBtn" onclick="done()" type="text" placeholder="Travelers 1 room &2 traveller"></div>
+            <div>
+<!--                 
+                <input onclick="randomNumber()" style="background-color:rgb(51, 51, 233);color: white;" id="checkAvailable" placeholder="Check availablity"  type="button">
+            <label style="margin-bottom:25px;position: relative;" for="">Search</label> -->
+            <button style="height:100%;width: 100%;border-radius: 5px ;background-color: rgb(91, 91, 230);color: white;font-size: 16px;" onclick="randomNumber()" id="checkAvailable">Searh now</button>
+            </div>
+        </div>
+       
+    </div>
+    
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div style="border-bottom:1px solid gray ;" class="modal-header">
+        <span id="abc" style="cursor:pointer;font-size: 20px;" class="close">x         Travelers </span>
+        <p>Room 1</p>
+      </div>
+      <p style="color: white;font-size: 3px;">d</p>
+      <div class="modal-body " style="">
+        Adults 
+        <div style="position: absolute; top: 80px; margin-left: 470px;">
+            <button onclick="plusForAdults()" > <i class="fa fa-plus"></i></button ><span id="adults+" style="margin-left: 3px;">1</span> <button onclick="minusForAdults()" class="plusButton" ><i class="fa fa-minus"></i></button>
+
+        </div>        <br>
+        <p style="color: white;font-size: 5px;">fkdjfds</p>
+        <p style="font-size: 3px;" >1</p>
+        Children
+        <br>
+        Age(0-17)
+        <div style="position: absolute; top: 130px; margin-left: 470px;">
+            <button onclick="plusForChildrens()" > <i class="fa fa-plus"></i></button ><span id="adults-" style="margin-left: 3px;">1</span> <button onclick="minusForChildrens()" class="plusButton" ><i class="fa fa-minus"></i></button>
+
+        </div> 
+      </div>
+      <div style="border-bottom: 1px solid gray;" class="modal-footer">
+        <h3 style="color: white;">Modal Footer</h3>
+      </div>
+      <a onclick="sorry()" style="color: blue;text-decoration: dotted;" href="#">Add another room</a>
+    </div>
+  
+  </div>
+  <!-- rooms portion -->
+  <div id="popularAmongTravelers" >
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+ <div></div>
+  </div>
+</body>
+</html>
+
+
+<script type="module">
+    import navbar from "./components/navbar.js";
+    let n=document.getElementById("navbar");
+    console.log(navbar)
+    n.innerHTML=navbar();
+    
+    </script>
+     
+<script>
+ 
+
+ 
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+function done(){
+    modal.style.display = "block";
+    // modal.style.background="orange"
+}
+ 
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+let span1=document.getElementById("adults+");
+let span2=document.getElementById("adults-")
+let i=1;
+function plusForAdults(){
+    i++
+    span1.innerText=i;
+    if(i>3){
+            alert(" more than 3 Adults not allowed")
+        }
+
+}
+
+function minusForAdults(){
+    i--;
+    span1.innerText=i;
+    
+    if(i<1){
+         alert("not possible")
+        i=1;
+        window.location.reload();
+    }
+}
+
+// 2
+let j=1
+function plusForChildrens(){
+    j++
+    span2.innerText=j;
+    if(j>3){
+            alert("You cant carry more than 3 childrens")
+        }
+}
+
+function minusForChildrens(){
+    j--;
+    span2.innerText=j;
+  
+    if(j<1){
+         alert("not possible")
+        j=1;
+        window.location.reload("sorry you ");
+    
+    }
+}
+function sorry(){
+    alert("right now no more rooms are available")
+}
+function randomNumber(){
+    let random=Math.ceil(Math.random()*10);
+console.log(random);
+if(random===3||random===7||random===2){
+    
+    alert("rooms are not available try again")
+
+
+}
+else{
+    alert("rooms are available click on Book Now to book");
+   
+ 
+}
+}
+let data=JSON.parse(localStorage.getItem("information"));
+ console.log(data);
+
+ let img=document.createElement("img");
+ img.src=data.img;
+
+//  let inputBox=document.createElement("input=radio")
+let checkBox=document.createElement("button")
+ document.getElementById("div").append(img); 
+ 
+  let title=document.createElement("h2");
+  title.innerText=data.title;
+
+  let city=document.createElement("p");
+  city.innerText=`City   -${data.city}`;
+
+  let refundable=document.createElement("p");
+  refundable.innerText=data.refundable;
+//   refundable: "Fully refundable"
+// reserve: "Reserve now, pay later"
+// rupees: "$98"
+// starRating: "4.1/5"
+// title: "Radisson Blu Plaza Delhi Airport"
+// total: "$104"
+let reserve=document.createElement("p");
+reserve.innerText=`Policies  -${data.reserve}`;
+
+let starRating=document.createElement("p");
+starRating.innerText=`Star ratings  = ${data.starRating}****`;
+let travellers=document.createElement("p");
+travellers.innerText=i;
+let rupees=document.createElement("p");
+rupees.innerText=`Total without GST-${data.rupees}`;
+let total=document.createElement("p");
+total.innerText=`Total+GST                        -${data.total}`;
+let button=document.createElement("button");
+button.innerText="BOOK NOW";
+button.style.height="40px"
+button.style.width="100px"
+button.style.textAlign="center"
+button.style.background="blue";
+button.style.color="white";
+button.style.borderRadius="10px"
+button.addEventListener("click",function(ele){
+    // alert("le bhaiye ompho")
+window.location.href="paymentpage.html"
+
+})
+document.getElementById("detailsDiv").append(title,city,refundable,reserve,starRating,rupees,total,button);
+
+
+let check=document.getElementById("check");
+let car=document.getElementById("car");
+
+function carPlay(){
+    if(check.checked===true){
+        car.style.display="block";
+    }
+    else{
+        car.style.display="none";
+    }
+}
+
+</script>

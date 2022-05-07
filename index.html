@@ -1,0 +1,769 @@
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="/styles/navbar.css">
+ </head>
+
+ <style>
+     body{
+font-family: Arial, Helvetica, sans-serif;
+     }
+     #navbar>div>div>a{
+color: white;
+     }
+ 
+     #trip{
+         width: 97%;
+         display: grid;
+        margin: auto;
+         grid-template-columns:repeat(3,1fr);
+         gap: 22px;
+        /* margin-top: 20px; */
+        }
+     #trip>div{
+         /* border: 1px solid black; */
+         border-radius: 10px;
+         height: 240px;
+         
+     }
+     #trip>div>img{
+         height:80%;
+         width: 100%;
+       border-top-left-radius: 5px;
+       border-top-right-radius: 5px;
+       filter: contrast(20%);
+       filter: drop-shadow(55%);
+       filter: brightness(75%);
+     }
+     ::-webkit-scrollbar {
+  width: 20px;
+  background-color: #505c66;
+}
+/* haaek */
+     div>h3{
+top:735px;
+position: absolute;
+color: whitesmoke;
+font-weight: bold;
+margin-left: 15px;
+filter: contrast(15250%);
+     }
+     #resort>button{
+         background-color: white;
+         transform: 0.1s;
+         
+     }
+     #resort>button:hover{
+         opacity: 0.8;
+     }
+
+     div>p{
+         margin-left: 7px;
+         font-size: 13px;
+         color: #505c66;
+         font-weight: 500;
+     }
+     /* resortdiv details */
+     #resort{
+         display: grid;
+         grid-template-columns: repeat(2,1fr);
+         height: 300px;
+         gap: 20px;
+         width: 97%;
+         margin: auto;
+         /* position: relative; */
+margin-top: 20px;
+     }
+     #resort>div{
+         border-radius: 5px;
+         text-shadow: 0px 1px 2px rgb(17 21 26 / 80%);
+         position: relative;
+     }
+     #resort>div>img{
+         height: 95%;
+         width: 100%;
+         filter: contrast(5%);
+         filter: brightness(55%);
+         border-radius: 8px;
+     }
+  #resort>div>h2{
+      position: absolute;
+      bottom: 100px;
+      color: white;
+      margin-left: 25px;
+  }
+ #resort>div>button{
+    position: absolute;
+    bottom: 65px;
+    right: 460px;
+    height: 37px;
+    cursor: pointer;
+    width: 110px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: white;
+    color: #0D5AB9;
+    text-shadow: 0px 1px 2px rgb(17 21 26 / 80%);
+    border-color: #A1AAB3;
+    line-height: 1.25rem;
+    border: none;
+ }
+ .start{
+     margin-left: 65px;
+ }
+ #planningTrip{
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+     gap: 22px;
+     width: 97%;
+     margin: auto;
+ }
+ #planningTrip>div{
+     position: relative;
+     color:black;
+    
+
+ }
+ #planningTrip>div>h4{
+     position: absolute;
+    margin-bottom: 65px;
+ }
+ #planningTrip>div>img{
+     height: 90%;
+     width: 100%;
+     border-radius: 10px;
+ }
+ #biggestImage{
+     margin: auto;
+     /* border: 1px solid black; */
+     width: 97%;
+     object-fit: cover;
+     margin-top: 15px;
+     object-position: center 1110%;
+  height: 290px;
+  position: relative;
+ }
+ #biggestImage>p{
+font-size: 14px;
+margin-top: -80px;
+position: absolute;
+font-size: 18px;
+color: white;
+font-weight: bold;
+letter-spacing: -0.1px;
+text-shadow: 0px 1px 2px rgb(17 21 26 / 80%);
+ }
+ #biggestImage>img{
+height: 100%; 
+ 
+  width: 100%;
+position: relative;
+  border-radius:10px ;
+ 
+ }
+ #youtubeVideo{
+     width: 95%;
+     margin: auto;
+     /* border: 1px solid black; */
+     margin-top: 50px;
+     border-radius:10px ;
+ }
+ iframe{
+    border-radius:10px ;
+ }
+ .div3{
+     width: 97%;
+     margin: auto;
+     /* border: 1px solid black; */
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     gap: 15px
+     ;
+ }
+ *{
+    /* background-color: #f0f3f5; */
+ }
+ .div3>div{
+     border-radius:10px ;
+     border: 1px solid black;
+     height: 70px;
+     padding-bottom: 10px;
+ }
+ .div3>div>h2{
+    padding-bottom: 5px;
+ }
+ .div3>div>p{
+    bottom: 20px;
+     position: relative;
+ }
+ h2{
+     margin-left: 5px;
+ }
+ #downloadApp{
+     margin-top: 20px;
+     margin: auto;
+     width: 97%;
+     display: flex;
+     /* border: 1px solid black; */
+     height: 300px;
+ }
+ #downloadApp>div{
+     border: 1px solid black;
+     height: 100%;
+     width: 25%;
+     margin-top: 20px;
+ 
+ }
+ li{
+    color: #505c66;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 25px;
+ }
+ #downloadApp>:first-child{
+    width: 38%;
+ }
+ #downloadApp>:first-child>img{
+     height: 100%;
+     width: 100%;
+     padding-right: 80px;
+ }
+ #downloadApp>:nth-child(2){
+     width: 55%;
+ }
+ #downloadApp:nth-child(3){
+     width: 10%;
+    
+ }
+ #downloadApp>div>div>h2,li{
+     margin-left: 30px;
+ }
+ h2{
+     margin-left: 25px;
+ }
+ #lele{
+     text-align: center;
+ }
+  #lelel>img{
+height: 50%;
+width: 60%;
+padding-left: 55px;
+  }
+  h4{
+      text-align: center;
+  }
+  #twoInput>input,select,button{
+height: 45px;
+width: 155px;
+border-radius: 10px;
+margin-left: 25px;
+position: relative;
+bottom: 20px;
+font-size: 17px;
+  }
+ #twoInput>button{
+top: -21px;
+position: relative;
+margin-top: 10px;
+background-color: dodgerblue;
+color: white;
+text-align: center;
+  }
+  #footer{
+      display: grid;
+      margin: auto;
+      /* margin-top: 20px; */
+      top: 20px;
+     /* position:absolute ; */
+      width: 90%;
+      border-bottom: 0.3px solid #A1AAB3;
+      grid-template-columns: repeat(5,1fr);
+  }
+ 
+  #footer>div>h4{
+      text-align: left;
+      margin-bottom: 5px;
+  }
+  #footer>div>img{
+padding-top: 20px;
+  }
+  #footer>div>a{
+      line-height:30px;
+      font-size: 13px;
+      text-decoration: none;
+      color:  #0D5AB9;
+  }
+  #footer>div>a:hover{
+      text-decoration: underline;
+      opacity: 1.5;
+  }
+  button{
+      cursor: pointer;
+      transition: 0.1s;
+      background-color: #0D5AB9;
+      -webkit-tap-highlight-color: transparent;
+      filter: contrast(80%);
+      /* filter: brightness(80%); */
+  }
+  button:hover{
+opacity: 0.9;
+  }
+
+  .search{
+      height: 500px;
+      width: 100%;
+      display: flex;
+      justify-content:space-evenly;
+      align-items: center;
+      gap: 20px;
+      background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/06/25/TVLY_SeizeYourSomeday_lpheroB_1680x945_20210623.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
+ background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+  .search>div{
+      height: 70px;
+      width: 80%;
+      margin: auto;
+      /* border: 1px solid black; */
+  
+  }
+ 
+  .search>div>input{
+      width: 100%;
+      height: 55px;
+  }
+  #searchForPlace{
+      /* width: 300px; */
+  }
+  #searchBox{
+      position: relative;
+      height: 400px;
+      width: 500px;
+      /* border: 1px solid black; */
+      bottom: 225px;
+  }
+  @media only screen and (min-width:50px) and (max-width:300px){
+      #trip{
+          grid-template-columns: repeat(1,1fr);
+      }
+  }
+  #checkbox{
+    position: relative;
+    bottom: 120px;
+    /* border: 1px solid black; */
+    
+  }
+  #checkbox>button{
+      margin-left: 380px;
+      position: relative;
+     top: 0px;
+     color: white;
+  }
+  #checkbox>input{
+      height: 20px;
+      width: 20px;
+      margin-left: 50px;
+     bottom:0px;
+      position: relative;
+      font-size: 16px;
+  }
+
+ </style>
+ <body>
+     <!-- Navbar portion start  -->
+     <div id="navbar" ></div>
+<!-- navbar end -->
+
+<!-- search functionallity -->
+ <div style="width: 100%;" class="search">
+     
+  <div oninput="search()" style="" id="searchForPlace"><input type="text" placeholder="           New Delhi"></div>
+  <div style="width: 600px"><input type="datetime-local"></div>
+  <div style="width:600px"><input type="datetime-local"></div>
+  <div style="width:600px"><input type="text" placeholder="Number of persons"></div>
+ 
+</div>
+<div style="display:none" id="searchBox"></div>
+<div id="checkbox">
+    <input type="checkbox">
+    <span>want car</span>
+    <input type="checkbox" name="" id="">
+    <span>want cash</span>
+    <button onclick="searchHotels()">Search for hotels</button>
+</div>
+<!-- <h1>sdfsdfds</h1> -->
+
+
+     <div id="trip">
+     </div>
+     <div id="resort"></div>
+      
+     <!-- Start planning your next trip -->
+     <div class="start">
+         <h1>Start planning your next trip</h1>
+     </div>
+     <div id="planningTrip"></div>
+     <div class="start">
+         <h1>Featured offers</h1>
+         <!-- <img src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/08/TVLY_Storefront_Family_imgB_1200x674_20211104.jpg" alt=""> -->
+        </div>
+     <div   id="biggestImage">
+<img src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/08/TVLY_Storefront_Family_imgB_1200x674_20211104.jpg" alt="">
+     <p>
+         
+Family vacation deals 
+     </p>
+     <p style="bottom: 5px;">
+        Seize your next unforgettable family vacation. 
+
+
+     </p>
+</div>
+<div id="youtubeVideo">
+    <iframe width="100%" height="62%; border-radius:5px;" src="https://www.youtube.com/embed/ItS8X0SjT4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="start">
+    <h1>Here to help keep you on the move</h1>
+</div>
+<div class="div3">
+<div>
+    <h2>
+        Change or cancel a trip 
+    </h2>
+    <p>Make updates to your itinerary or cancel a booking
+
+    </p>
+</div>
+<div>
+    <h2>
+      Use a credit coupon 
+    </h2>
+    <p>
+        <!-- Use a credit or coupon -->
+        Apply a coupon code or credit to a new trip
+        
+        
+
+    </p>
+</div>
+<div>
+    <h2>
+      Track your refund 
+    </h2>
+    <p>
+        Check the status of a refund currently in progress
+    </p>
+</div>
+</div>
+<p style="color:white ;">juchh karr le</p>
+<div id="downloadApp">
+    <div>
+        <img src="https://a.travel-assets.com/mad-service/footer/marquee/TVLY_App_Footer_v1.jpg" alt="">
+    </div>
+    <div id="twoInput">
+        <h2 style="margin-left: 25px
+        ;">
+            Wander Wisely with the Travelocity app
+        </h2>
+            <li>
+                Get helpful alerts about flight status and get numbers</li>
+            <li>
+                
+Access all your travel details, even when offline
+            </li>
+            <li>
+                
+Easily contact your hotel by messaging them right in the app
+            </li>
+        
+       <h2 style="margin-right: 10px;">Text yourself a download link</h2>
+      <select aria-valuetext="sfnfd" name="" id="">
+          <option value="">                  USA+101</option>
+      </select>
+     
+      
+       <input id="phoneNumber" placeholder="   Phone Number" type="text">
+       <button onclick="getApp()">Get the app</button>
+      
+      <div  style="bottom: 20px; position: relative; padding-left: 20px;">
+        <p>  By providing your number, you agree to receive a one-time automated text message with a link to get the app. Standard text message rates may apply.
+    </p>
+      </div> 
+       
+     
+    </div>
+    <div id="lelel">
+        <img  src="https://a.travel-assets.com/mad-service/qr-code/portfolio_app_landing/qr_app_landing_footer_travelocity.png" alt="">
+   <h4>Scan the QR code</h>
+    </div>
+
+</div>
+<!-- <h2>sdfsdfsd</h2> -->
+
+<!-- footer -->
+<div class="start">
+    <h1 style="margin-top: 50px;color: white;">Destination ideas to plan your next trip</h1>
+</div>
+<div id="footer">
+<div>
+    <img src="
+    https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg
+    " alt="">
+</div>
+<div>
+    <h4>company</h4>
+    <a href="#">About</a>
+    <br>
+    <a href="#">Jobs</a>
+    <br>
+    <a href="#">List your property</a>
+    <br>
+    <a href="#">Partnerships</a>
+    <br>
+    <a href="#">Newsroom</a>
+    <br>
+    <a href="#">Investor Relations</a>
+    <br>
+    <a href="#">Roaming Gnome Store</a>
+    <br>
+    <a href="#"> Advertising</a>
+    <br>
+    <a href="#"></a>
+</div>
+<div>
+   <h4>Explore</h4>
+    <a href="#">
+        Hotels in United States
+    </a>
+    <br>
+    <a href="#">
+        Vacation Rentals in United States
+    </a>
+    <br>
+    <a href="#">
+        Domestic Flights
+    </a>
+    <br>
+    <a href="#">
+        Car Rentals in United States
+    </a>
+    <br>
+    <a href="#">
+        Travelocity Reviews
+    </a>
+    <br>
+    <a href="#">
+        
+Travelocity Coupons
+    </a>
+    <br>
+    <a href="#">
+        
+Travelocity Coupons
+    </a>
+    <br>
+    <a href="#">
+        Unique Places to Stay
+    </a>
+    <br>
+    <a href="#">
+        
+Travel Blog
+    </a>
+</div>
+<div>
+  
+    <h4>Policies</h4>
+    <a href="#">
+        Privacy Policy
+    </a>
+    <br>
+    <a href="#">
+        Terms of Use
+    </a>
+    <br>
+    <a href="#">
+        
+Vrbo terms and conditions
+    </a>
+    <br>
+    <a href="#">
+        Accessibility
+    </a>
+    <br>
+    <a href="#">
+        Do not sell my personal information</a>
+    <br>
+    <a href="#"></a>
+    <br>
+    <a href="#"></a>
+    <br>
+    <a href="#"></a>
+    <br>
+    <a href="#"></a>
+</div>
+<div>
+
+
+
+
+    <h4>Help</h4>
+    <a href="#">Support</a>
+    <br>
+    <a href="#">Cancel your hotel or vacation rental booking</a>
+    <br>
+    <a href="#">Cancel your flight</a>
+    <br>
+    <a href="#">Refund timelines, policies & processes</a>
+    <br>
+    <a href="#">Use a Travelocity coupon</a>
+    <br>
+    <a href="#"></a>
+    <br>
+    <a href="#"></a>
+    <br>
+    <a href="#"></a>
+    <br>
+    <a href="#"></a>
+</div>
+
+</div>
+<center style="font-size: 14px; color: #505c66;" ><p>© 2022 Travelscape LLC, an Expedia Group Company. All rights reserved.</p></center>
+<center style="font-size: 14px; color: #505c66;" ><p>Travelocity, the Stars Design, and The Roaming Gnome Design are trademarks or registered trademarks of Travelscape LLC. CST# 2056372-50.</p></center> 
+</body>
+
+ </html>
+
+<script type="module">
+import navbar from "./components/navbar.js";
+let n=document.getElementById("navbar");
+console.log(navbar)
+n.innerHTML=navbar();
+
+</script>
+
+ <script>
+     let tripInformation=[
+     {
+        image:"https://forever.travel-assets.com/flex/flexmanager/images/2020/11/12/TVLY_StoreFrontRefresh_BrandPromise_FitForYou_sfimg_562x240_20201111.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh", 
+        title:"Find your perfect trip",
+         detail:"Plan a trip for the whole family—from family travel tips to family-friendly filters, our tools make it easy.",
+     },
+     {
+         image:"https://forever.travel-assets.com/flex/flexmanager/images/2020/11/12/TVLY_StoreFrontRefresh_BrandPromise_Transparency_sfimg_562x240_20201111.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh",
+         title:"Book with flexiblity",
+         detail:"Looking for a change of scenery, but want something flexible? With free cancellation on most hotels, you can book with peace of mind.",
+     }
+     ,
+     {
+         image:"https://forever.travel-assets.com/flex/flexmanager/images/2020/11/12/TVLY_StoreFrontRefresh_BrandPromise_GotYourBack_sfimg_562x240_20201111.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh",
+         title:"We've got your back",
+         detail:"Need more help along your journey? We offer 24/7 support on social and through virtual agents onsite.",
+     }
+     
+     ];
+
+
+     tripInformation.map(function(ele){
+         let div=document.createElement("div")
+         div.setAttribute=("id","div");
+         let img=document.createElement("img");
+         img.src=ele.image;
+         let title=document.createElement("h3")
+         title.innerText=ele.title;
+         let details=document.createElement("p");
+         details.innerText=ele.detail;
+         div.append(img,title,details);
+         document.getElementById("trip").append(div);
+
+     })
+
+
+     let resortinfo=[
+         {
+image:"https://forever.travel-assets.com/flex/flexmanager/images/2021/11/08/TVLY_Storefront_AllInclusive_imgB_1199x399_20211104.jpg",
+title:"All-inclusive resorts ",
+details:"Think of nothing beyond having a great time with your family",
+         },{
+             image:"https://forever.travel-assets.com/flex/flexmanager/images/2021/11/08/TVLY_Storefront_LastMinute_imgB_1199x399_20211104.jpg",
+             title:"Last minute getaways",
+             details:"Celebrate the moment with an unexpected getaway",
+         }
+     ];
+
+resortinfo.map(function(ele){
+    let div=document.createElement("div");
+    let img=document.createElement("img");
+    img.src=ele.image;
+    let title=document.createElement("h2");
+    title.innerText=ele.title;
+    let details=document.createElement("p");
+details.innerText=ele.details;
+let button=document.createElement("button");
+button.innerText="View deals"
+div.append(img,button,title);
+document.getElementById("resort").append(div);
+})
+  
+let nextTripInfo=[
+    {
+        img:"https://forever.travel-assets.com/flex/flexmanager/images/2021/11/08/TVLY_Storefront_Beach_imgB_900x506_20211104.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh",
+        title:"Sunny beach hotel offers",
+    },
+    {
+        img:"https://forever.travel-assets.com/flex/flexmanager/images/2021/11/08/TVLY_Storefront_Car_imgB_900x506_20211104.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh",
+        title:"Car rental deals",
+    },
+    {
+        img:"https://forever.travel-assets.com/flex/flexmanager/images/2021/11/08/TVLY_Storefront_MOD_imgB_900x506_20211104.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh",
+        title:"Member discounts",
+    },
+    {
+        img:"https://forever.travel-assets.com/flex/flexmanager/images/2021/11/08/TVLY_Storefront_VacationRentals_imgB_900x506_20211104.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh",
+        title:"Vacation rental offers",
+    }
+]
+
+nextTripInfo.map(function(ele){
+    let div=document.createElement("div");
+    let img=document.createElement("img");
+    img.src=ele.img;
+  let title=document.createElement("h4")
+    title=ele.title;
+    div.append(img,title);
+    document.getElementById("planningTrip").append(div)
+})
+
+let phoneNumber=document.getElementById("phoneNumber").value;
+function getApp(){
+    if(phoneNumber===null){
+        alert("abey dalle phonenumber daal na")
+    }
+    else{
+        alert("we have sent a link to your mobile number")
+    }
+}
+
+
+async function search(){
+    let a=document.getElementById("searchForPlace").value;
+    console.log(a)
+try{
+    let res= await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${a}&APPID=597489a7fbab7042efe6fb7fb0e2a0c2&units=metric`);
+let data= await res.json();
+console.log(data);
+}   
+catch(err){
+    console.log("err:",err);
+}
+
+}
+
+function searchHotels(){
+    window.location.href="details.html"
+}
+ </script>
