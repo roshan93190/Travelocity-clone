@@ -33,14 +33,3 @@ Think of nothing beyond having a great time with your family
  
    - Video Link: https://drive.google.com/file/d/1kbDa-YKKQUIBrszxAbvvAX1UuKTgdWsu/view?usp=sharing
    - Netlify Link :https://cheerful-lebkuchen-890c5e.netlify.app/
-
-
-
-   ## Authors
-
-  1. [Shashi Ranjan](https://github.com/Sranjan4321) 
-  2. [Roshan](https://github.com/roshan93190) 
-  3. [Rahul Sinha](https://github.com/arif841236/rahulsinha1996) 
-  4. [Chandu-Sarihaddu](https://github.com/Chandu-Sarihaddu)
-  5. [Rama Krushna Panda](https://github.com/ramakrushnapanda634)
-  6. [Sambit Kumar Barik](https://github.com/sambitkumar10)
